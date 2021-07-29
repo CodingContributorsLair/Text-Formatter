@@ -1,6 +1,6 @@
 # AvidCoder's Text Formatter
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ### This is a Text Formatter that can change text into different styles. 
@@ -18,6 +18,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="http://JayantGoel001.github.io"><img src="https://avatars.githubusercontent.com/u/54479676?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Jayant Goel</b></sub></a><br /><a href="#content-JayantGoel001" title="Content">🖋</a> <a href="#design-JayantGoel001" title="Design">🎨</a></td>
     <td align="center"><a href="https://github.com/AvidCoder101"><img src="https://avatars.githubusercontent.com/u/70807684?v=4?s=100" width="100px;" alt=""/><br /><sub><b>AvidCoder</b></sub></a><br /><a href="#projectManagement-AvidCoder101" title="Project Management">📆</a> <a href="https://github.com/CodingContributorsLair/Text-Formatter-2/commits?author=AvidCoder101" title="Code">💻</a> <a href="https://github.com/CodingContributorsLair/Text-Formatter-2/commits?author=AvidCoder101" title="Documentation">📖</a> <a href="https://github.com/CodingContributorsLair/Text-Formatter-2/pulls?q=is%3Apr+reviewed-by%3AAvidCoder101" title="Reviewed Pull Requests">👀</a></td>
+    <td align="center"><a href="https://codingspecies.github.io/MeAndMyApps/"><img src="https://avatars.githubusercontent.com/u/70807500?v=4?s=100" width="100px;" alt=""/><br /><sub><b>CodingSpecies</b></sub></a><br /><a href="https://github.com/CodingContributorsLair/Text-Formatter-2/pulls?q=is%3Apr+reviewed-by%3ACodingSpecies" title="Reviewed Pull Requests">👀</a></td>
   </tr>
 </table>
 
