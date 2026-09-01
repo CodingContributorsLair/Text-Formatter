@@ -35,12 +35,23 @@
       "contributions": [
         "review"
       ]
+    },
+    {
+      "login": "louzt",
+      "name": "David Mireles",
+      "avatar_url": "https://avatars.githubusercontent.com/u/179385168?v=4",
+      "profile": "http://www.socialspheremx.loust.pro",
+      "contributions": [
+        "content"
+      ]
     }
   ],
   "contributorsPerLine": 7,
-  "projectName": "Text-Formatter-2",
+  "projectName": "Text-Formatter",
   "projectOwner": "CodingContributorsLair",
   "repoType": "github",
   "repoHost": "https://github.com",
-  "skipCi": true
+  "skipCi": true,
+  "commitType": "docs",
+  "commitConvention": "angular"
 }
