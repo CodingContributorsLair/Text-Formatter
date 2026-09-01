@@ -1,61 +1,42 @@
 const inputField = document.getElementById('inputField');
 const outputField = document.getElementById('outputField');
 
-inputField.addEventListener('keyup', getValue);
-
-function getValue(){
-    outputField.innerHTML = inputField.value;
+if (inputField && outputField) {
+    inputField.addEventListener('keyup', () => {
+        outputField.textContent = inputField.value;
+    });
 }
 
-const uppercaseBtn = document.querySelector('.uppercase');
+// Helper to apply text transforms
+const applyTransform = (transformFn) => {
+    if (outputField) {
+        outputField.textContent = transformFn(outputField.textContent);
+    }
+};
 
-uppercaseBtn.addEventListener('click', () => {
-    return (outputField.innerHTML = outputField.innerHTML.toUpperCase());
+document.querySelector('.uppercase')?.addEventListener('click', () => {
+    applyTransform(text => text.toUpperCase());
 });
 
-
-document.querySelector('.lowercase').onclick=()=> {
-    return (outputField.innerHTML = outputField.innerHTML.toLowerCase());
-}
-
-document.querySelector('.capitalize').onclick = () => (outputField.innerHTML = outputField.innerHTML.charAt(0).toUpperCase() + outputField.innerHTML.slice(1).toLowerCase());
-
-const boldBtn = document.querySelector('.bold');
-
-boldBtn.addEventListener('click', () => {
-    if (boldBtn.classList.contains('active')){
-        boldBtn.classList.remove('acitve');
-        outputField.style.fontWeight = '400';
-    }
-    else {
-        boldBtn.classList.add('active');
-        outputField.style.fontWeight = '700';
-    }
-})
-
-const italicBtn = document.querySelector('.italic');
-
-italicBtn.addEventListener('click', () => {
-    if (italicBtn.classList.contains('active')){
-        italicBtn.classList.remove('active');
-        outputField.style.fontStyle = 'none';
-    }
-    else {
-        italicBtn.classList.add('active');
-        outputField.style.fontStyle = 'italic';
-    }
+document.querySelector('.lowercase')?.addEventListener('click', () => {
+    applyTransform(text => text.toLowerCase());
 });
 
-const underlineBtn = document.querySelector('.underline');
-
-underlineBtn.addEventListener('click', () => {
-    if (underlineBtn.classList.contains('active')){
-        underlineBtn.classList.remove('active');
-        outputField.style.textDecoration = 'none';
-    }
-    else {
-        underlineBtn.classList.add('active');
-        outputField.style.textDecoration = 'underline';
-    }
+document.querySelector('.capitalize')?.addEventListener('click', () => {
+    applyTransform(text => text.charAt(0).toUpperCase() + text.slice(1).toLowerCase());
 });
 
+// Helper to toggle CSS style classes
+const toggleStyle = (btnSelector, styleProp, activeValue, inactiveValue) => {
+    const btn = document.querySelector(btnSelector);
+    btn?.addEventListener('click', () => {
+        if (outputField) {
+            const isActive = btn.classList.toggle('active');
+            outputField.style[styleProp] = isActive ? activeValue : inactiveValue;
+        }
+    });
+};
+
+toggleStyle('.bold', 'fontWeight', '700', '400');
+toggleStyle('.italic', 'fontStyle', 'italic', 'normal');
+toggleStyle('.underline', 'textDecoration', 'underline', 'none');
